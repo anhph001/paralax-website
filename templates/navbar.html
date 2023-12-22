@@ -1,0 +1,10 @@
+<!-- navbar.html -->
+<header>
+    <a href="#" class="logo">Logo</a>
+    <ul>
+        <li><a href="{{ url_for('index') }}" {% if active == 'index' %}class="active"{% endif %}>Home</a></li>
+        <li><a href="{{ url_for('about') }}" {% if active == 'about' %}class="active"{% endif %}>About</a></li>
+        <li><a href="{{ url_for('work') }}" {% if active == 'work' %}class="active"{% endif %}>Work</a></li>
+        <li><a href="{{ url_for('contact') }}" {% if active == 'contact' %}class="active"{% endif %}>Contact</a></li>
+    </ul>
+</header>
